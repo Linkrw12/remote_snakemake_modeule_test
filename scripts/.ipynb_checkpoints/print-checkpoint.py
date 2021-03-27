@@ -14,7 +14,7 @@ import argparse
 
 def main():
     # args = get_parser().parse_args()
-    print(snakemake.config['foo_input'])
+    print( "X" )
 
 if __name__ == '__main__':
     main()
