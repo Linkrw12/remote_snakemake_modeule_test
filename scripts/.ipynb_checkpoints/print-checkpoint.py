@@ -2,19 +2,19 @@
 
 import argparse
 
-def get_parser():
-    parser = argparse.ArgumentParser(
-        description='dummy snakemake function',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+# def get_parser():
+#     parser = argparse.ArgumentParser(
+#         description='dummy snakemake function',
+#         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument("-i", default=None,
-                        help="item to be printed")
+#     parser.add_argument("-i", default=None,
+#                         help="item to be printed")
     
-    return parser
+#     return parser
 
 def main():
-    args = get_parser().parse_args()
-    print(args.i)
+    # args = get_parser().parse_args()
+    print(snakemake.config['foo_input'])
 
 if __name__ == '__main__':
     main()
