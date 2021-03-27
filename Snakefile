@@ -5,5 +5,7 @@ rule foo:
 rule bar:
     output:
         touch(temp("complete.txt"))
+    params:
+        remote("scripts")
     shell:
-        "python3 scripts/print.py -i foo"
+        "python3 {params}/print.py -i foo"
